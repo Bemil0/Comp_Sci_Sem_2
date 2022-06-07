@@ -1,0 +1,27 @@
+101_numpy
+
+s = int(input("Please enter a size: "))
+mi = int(input("Please enter a minimum: "))
+mx = int(input("Please enter a maximum: "))
+c = random.randint(mi,mx,s)
+print(c)
+mx2 = c.max()
+print("The maximum is: "+str(mx2))
+mi2 = c.min()
+print("The maximum is: "+str(mx2))
+s = c.sum()
+ave = s/len(c)
+print("The average is: "+str(ave))
+
+
+102_pandas
+
+movies_df['Year'].plot(kind='hist', title='Year');
+movies_df.plot(kind='scatter', x='Year', y='Metascore', title='Metascore vs Year');
+metascore = movies_df['Metascore']
+s = metascore.sum()
+ave = s/len(metascore)
+print("The average Metascore is: "+str(ave))
+
+103_data_science
+
